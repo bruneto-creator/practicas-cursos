@@ -1,0 +1,19 @@
+.lista {
+  display: grid;
+  gap: 15px;
+}
+
+article {
+  background: white;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+span {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: #b91c1c;
+}

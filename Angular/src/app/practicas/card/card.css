@@ -1,0 +1,12 @@
+article {
+  background: white;
+  border: 1px solid #d8dee9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #00000015;
+  min-height: 170px;
+  padding: 20px;
+}
+
+small {
+  color: #64748b;
+}

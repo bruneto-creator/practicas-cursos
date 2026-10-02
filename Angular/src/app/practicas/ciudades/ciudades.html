@@ -1,0 +1,15 @@
+<section>
+  <h2>Ciudades</h2>
+
+  @for (lugar of ciudades; track lugar.ciudad) {
+    <p>{{ lugar.ciudad }}, {{ lugar.pais }} - {{ lugar.habitantes }} habitantes</p>
+  }
+
+  @if (ciudades.length > 5) {
+    <h3>Hay más de cinco ciudades</h3>
+  }
+
+  <h5 [ngClass]="ciudades.length < 5 ? 'azul' : 'verde'">
+    Total de ciudades: {{ ciudades.length }}
+  </h5>
+</section>

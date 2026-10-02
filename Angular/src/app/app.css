@@ -1,0 +1,33 @@
+header {
+  background: #202938;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  background: #364152;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+nav a.activo {
+  background: #2563eb;
+}
+
+main {
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}

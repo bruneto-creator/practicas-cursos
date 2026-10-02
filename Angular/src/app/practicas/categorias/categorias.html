@@ -1,0 +1,21 @@
+<section>
+  <h2>Categorías de la API</h2>
+
+  @if (cargando) {
+    <p>Cargando categorías...</p>
+  }
+
+  @if (error) {
+    <p class="error">{{ error }}</p>
+  }
+
+  <div class="lista">
+    @for (categoria of categorias; track categoria.id) {
+      <article>
+        <h3>{{ categoria.nombre }}</h3>
+        <p>{{ categoria.descripcion }}</p>
+        <span>{{ categoria.activo ? 'Activa' : 'Inactiva' }}</span>
+      </article>
+    }
+  </div>
+</section>
